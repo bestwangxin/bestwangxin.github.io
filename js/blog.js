@@ -1,12 +1,12 @@
 /**
- * Created by ¹Å¹ÖµÄÌÇ¹û on 2016/10/14.
+ * Created by å¤æ€ªçš„ç³–æœ on 2016/10/14.
  */
 
 $(document).ready(function(){
     $("div.content:gt(9)").css("display","none");
     $(".tab-content").children("div").css("display","none");
     $(".tab-content").children("div").eq(0).css("display","block");
-    /*±êÇ©Ò³ÇĞ»»*/
+    /*æ ‡ç­¾é¡µåˆ‡æ¢*/
     $("#myTab a").click(function (e) {
         $(this).tab('show');
         $(this).removeClass("nav-noSelected").addClass("nav-selected").siblings().removeClass("nav-selected").addClass("nav-noSelected")
@@ -14,10 +14,10 @@ $(document).ready(function(){
         $(".tab-content").children("div").eq($(this).index()).css("display","block").siblings().css("display","none");
 
     });
-    /*±êÇ©Ò³ÇĞ»»*/
+    /*æ ‡ç­¾é¡µåˆ‡æ¢*/
 
 
-    /*·ÖÒ³¿ªÊ¼*/
+    /*åˆ†é¡µå¼€å§‹*/
     $(".paging li").click(function(){
         var index = $(this).index();
         var min = 10*(index);
@@ -32,9 +32,9 @@ $(document).ready(function(){
         $("div.content:gt("+max+")").css("display","none")
 
     })
-    /*·ÖÒ³½áÊø*/
-    /*×ó²¿ÇĞ»»*/
-    function changeClass(){
+    /*åˆ†é¡µç»“æŸ*/
+    /*å·¦éƒ¨åˆ‡æ¢*/
+    /*function changeClass(){
         if($(window).width()>=767){
             $(".col-sm-3").addClass("col-sm-3-max");
             $(".col-sm-9").addClass("col-sm-9-max");
@@ -45,25 +45,25 @@ $(document).ready(function(){
         }
     }
     changeClass();
-    $(window).resize(function() {  //µ±ä¯ÀÀÆ÷´°¿Ú¸Ä±äÊ±
+    $(window).resize(function() {  //å½“æµè§ˆå™¨çª—å£æ”¹å˜æ—¶
         changeClass();
-    });
-    /*×ó²¿ÇĞ»»*/
-    /*ÄÚÈİÒ³ÇĞ»»¿ªÊ¼*/
+    });*/
+    /*å·¦éƒ¨åˆ‡æ¢*/
+    /*å†…å®¹é¡µåˆ‡æ¢å¼€å§‹*/
     $(".content a").click(function(){
         var page_index =  $(this).parents("div.content").index();
         window.open("page.html?i="+page_index+"","_parent")
     });
-    /*ÄÚÈİÒ³ÇĞ»»½áÊø*/
+    /*å†…å®¹é¡µåˆ‡æ¢ç»“æŸ*/
 
-    /*»ñÈ¡ÆÁÄ»¸ß¶È*/
+    /*è·å–å±å¹•é«˜åº¦*/
         var windows_height = $(window).height();
         $(".main-left").css("height",windows_height+"px");
         $(".main-right").css("min-height",windows_height+"px")
 
-    /*»ñÈ¡ÆÁÄ»¸ß¶È*/
+    /*è·å–å±å¹•é«˜åº¦*/
 
-    /*´úÂë¸ßÁÁ*/
+    /*ä»£ç é«˜äº®*/
         $(".htmlCode").snippet("javascript",{ style: "random", collapse: true,transparent:false, startCollapsed: false});
-    /*´úÂë¸ßÁÁ*/
+    /*ä»£ç é«˜äº®*/
 })
