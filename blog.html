@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/offcanvas.css">
+    <script src="js/jquery-1.12.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/blog.js"></script>
+</head>
+<body>
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class=" col-sm-3 sidebar-offcanvas   main-left"  id="sidebar">
+                <div class="border-bg">
+                </div>
+                <!--左侧三列-->
+                <div class="col-sm-3-top">
+                    <img src="images/header.png">
+                    <p class="col-sm-3-top-name">古怪的糖果</p>
+                    <p class="col-sm-3-top-profession">学生/前端爱好者</p>
+                </div>
+                <div class="col-sm-3-middle">
+                    <p class="col-sm-3-middle-skill">个人技能</p>
+                    <ul style="height: 45%" >
+                        <li><img src="images/80.png" width="100%"></li>
+                        <li><img src="images/75.png" width="100%"></li>
+                        <li><img src="images/80-red.png" width="100%"></li>
+                        <li><img src="images/85.png" width="100%"></li>
+                    </ul>
+                    <ul style="height:15%;margin-top: -10px">
+                        <li><img src="images/css3.png" width="100%"></li>
+                        <li><img src="images/html.png" width="100%"></li>
+                        <li><img src="images/ps.png" width="100%"></li>
+                        <li><img src="images/jquery.png" width="100%"></li>
+                    </ul>
+                    <p style="font-size: 12px;color:#636c71"> 为了更好的设计，为了更好的钱途</p>
+                </div>
+                <div class="col-sm-3-bottom">
+                    <header> 喜欢我？那就约！约！约！</header>
+                    <div class="information"><span>TEL</span><span>:13883094833</span></div>
+                    <div class="information"><span>QQ</span><span>:794822947</span></div>
+                    <div class="information"><span>EMAIL</span><span>:794822947@qq.com</span></div>
+                </div>
+                <!--左侧三列-->
+            </div>
+
+            <div class="col-xs-12 col-sm-9 main-right">
+                <p class="pull-left visible-xs">
+                    <button type="button" class="btn btn-success btn-sm " data-toggle="offcanvas"  style="margin-top: 15px;margin-right: 20px;opacity: 0.8">◕‿◕</button>
+                </p>
+                <div class="row">
+                    <ul class="nav " id="myTab">
+                        <a class="nav-selected" ><li class="active">全部</li></a>
+                        <a class="nav-noSelected" ><li> 开发</li></a>
+                        <a class="nav-noSelected"><li>生活</li></a>
+                        <a class="nav-noSelected"><li>干货</li></a>
+                    </ul>
+                    <div class="tab-content">
+                        <div>
+                            <div class="content">
+                                <a>jquery中click()事件无法触发按钮的href效果</a>
+                                <div class="content-image"></div>
+                                <div class="content-tag">
+                                    <span style="display: block" class = "glyphicon glyphicon-tags btn-xs"><span class="glyphiconSpan">前端设计</span><span class = "glyphicon glyphicon-time btn-xs"></span><span class="glyphiconSpan">2016-10-15</span></span>
+                                </div>
+                                <p>
+                                    之前用Jquery中click方法模拟点击某个按钮时，无法触发该按钮附带的href链接，解决方法如下
+                                    jQuery(function($){
+                                    var mo2g='<span id="mo2g"><span>';
+//给A标签中的文字添加一个能被jQuery捕获的元素
+                            $('a').append(mo2g);
+//模拟点击A标签中的文字
+                            $('#mo2g').click();
+                        });
+                                </p>
+                            </div>
+                            <div class="content">
+                                <a>声明与不声明变量的作用域问题
+                                </a>
+                                <div class="content-image"></div>
+                                <div class="content-tag">
+                                    <span style="display: block" class = "glyphicon glyphicon-tags btn-xs"><span class="glyphiconSpan">前端设计</span><span class = "glyphicon glyphicon-time btn-xs"></span><span class="glyphiconSpan">2016-10-15</span></span>
+                                </div>
+                                <p>
+                                    使用 var 声明的变量会自动被添加到最接近的环境中。 在函数内部， 最接近的环境就是函数的局部
+                                    环境；在 with 语句中，最接近的环境是函数环境。如果初始化变量时没有使用 var 声明，该变量会自
+                                    动被添加到全局环境。如下所示：
+                                </p>
+                            </div>
+                            <div class="paging">
+                                <ul>
+                                    <li id="1" class="paging-selected"><a href="#">1</a></li>
+                                    <li id="2"><a href="#">2</a></li>
+                                    <li id="3"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>222222222</div>
+                        <div>3333333</div>
+                        <div>44444444</div>
+                    </div>
+                </div><!--/row-->
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+</body>
+</html>

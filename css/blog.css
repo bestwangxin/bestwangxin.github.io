@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/*左部内容*/
+.main-left{
+    height: 1000px;
+    padding-right: -5px;
+    background: url("../images/left_bg-1.png");
+    background-size: 100% 100%;
+    left: 0;
+    z-index: 100;
+}
+.col-sm-3-top{
+    height: 30%;
+    text-align: center;
+}
+.col-sm-3-middle{
+    text-align: center;
+    margin-top: 10%;
+    height: 30%;
+}
+.col-sm-3-top img{
+    margin-top: 5%;
+    height: 40%;
+}
+.col-sm-3-top-name{
+    font-family: "Indie Flower", serif;
+    margin-top: 10%;
+    color: #42b8f1;
+    font-size: 18px;
+}
+.col-sm-3-top-profession{
+    margin-bottom: -10px;
+    font-size: 12px;
+    color:#636c71
+}
+.col-sm-3-middle p:first-child{
+    margin-top: 5%;
+    color:#42b8f1 ;
+    font-size: 18px;
+}
+.col-sm-3-middle p:nth-child(2){
+    font-size: 12px;
+    color:#636c71
+}
+.col-sm-3-middle ul {
+    width: 100%;
+}
+.col-sm-3-middle ul li{
+    float: left;;
+    height: 100%;
+    list-style: none;
+    width:22% ;
+    margin-left: 2%;
+}
+.col-sm-3-bottom{
+    text-align: center;
+    margin-top: 10%;
+    height: 30%;
+}
+.col-sm-3-bottom header{
+    padding-top: 10px;
+    color:#42b8f1;
+}
+.information{
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 80%;
+    height: 25px;
+    background-color: #29bbe3;
+}
+.information span:first-child{
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 16px;
+    font-family: Consolas;
+}
+.information span:nth-child(2){
+    color: #ffffff;
+}
+/*左部内容*/
+.main-right{
+    background-color: #f6f9f7;
+}
+.border-bg{
+    margin-right: -15px;
+    float: right;
+    width: 9px;
+    height:100%;
+    background: url("../images/border-bg.svg");
+    background-repeat: repeat-y;
+}
+.main-right .nav a{
+    text-decoration: none;
+    margin: 0px 6px 0px 6px;
+    padding: 20px 12px 0px 12px;
+    float: left;
+    font-size: 16px;
+}
+.main-right ul{
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+.main-right .nav a:hover{
+    color:#29bbe3;
+}
+.nav-selected{
+    color:#29bbe3;
+    font-weight: 600;
+    border-bottom: 2px solid #29bbe3
+}
+.nav-noSelected{
+    color:#757575;
+}
+#myTab a{
+    cursor: pointer;
+}
+.content{
+    padding: 20px 0px 0px 20px;
+    border-bottom: 1px dashed #b3afaf;
+    width: 90%;
+    height: 150px;
+    position: relative;
+}
+.content a{
+    width: 90%;
+    color: #334750;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.content a:hover{
+    color: #000;
+}
+.content-image{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 65px;
+}
+.content-tag{
+    margin-top: 5px;
+    width: 100%;
+    height: 25px;
+}
+.content p{
+    width: 90%;
+    line-height: 25px;
+    height: 50px;
+    overflow: hidden;
+}
+.content span{
+}
+.glyphiconSpan{
+    font-weight: 800;
+    padding-left: 4px;
+    line-height: 12px;
+    margin-bottom:7px;
+    font-size: 12px;
+}
+/*
+分页开始*/
+.paging{
+    padding-top: 40px;
+    height: 100px;
+}
+.paging ul{
+    width: 140px;
+    margin-left: 30%;
+}
+.paging ul li{
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    float: left;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+}
+.paging ul li a{
+    cursor: pointer;
+    line-height: 25px;
+    text-decoration: none;
+}
+.paging-selected {
+    background-color: #334750;
+}
+.paging-selected a{
+    color: #ffffff;
+}
+
+/*
+分页结束*/
+
+/*左部内容根据浏览器宽度调整的样式*/
+.col-sm-3-max{
+    position: fixed;
+    z-index: 20;
+}
+.col-sm-9-max{
+    margin-left: 25%;
+}
+/*左部内容根据浏览器宽度调整的样式*/
+
+
+/*
+内容页开始*/
+.wx-page{
+    display: none;
+}
+.wx-page-header{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: dashed 1px #b3afaf ;
+}
+.wx-page p{
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+    word-break: break-all;
+    height: auto;
+}
+.htmlCode{
+    margin: 0 auto;
+    width: 90%;
+}
+/*
+内容页结束*/
+/*
+收款开始*/
+.receipt{
+    float: left;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+/*
+收款结束*/
